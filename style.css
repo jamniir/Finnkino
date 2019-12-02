@@ -1,0 +1,36 @@
+.navbar {
+  background: #222222;
+  height: 50px;
+}
+
+.elokuvateatteri {
+  color: #FFFFFF;
+}
+
+.navbar-header {
+    float: left;
+    text-align: center;
+    width: 100%;
+}
+
+.navbar-brand {
+  float:none;
+}
+
+hr.katko {
+  border: 1px solid #2B2B2B;
+  width: 96%;
+  margin-left: -1px;
+}
+
+.toggle-btn {
+  display: block;
+  width: 99%;
+  margin-left: -15px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.tiedot {
+  font-size: 14px;
+}
