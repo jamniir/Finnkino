@@ -8,7 +8,7 @@ $(document).ready(function(){
 function haeElokuvat() {
   var teatteri = document.getElementById("teatteri_id").value; // Haetaan halutun teatterin ID ja syötetään se teatteri-muuttujaan
   // Perus XML request
-  xmlhttp = new XMLHttpRequest();
+  var xmlhttp = new XMLHttpRequest({mozSystem: true});
   xmlhttp.open("GET", "https://www.finnkino.fi/xml/Schedule/?area=" + teatteri, true); // Haetaan finnkino xml ja syötetään sen perään aiemmin tehty muuttuja
   xmlhttp.send();
   xmlhttp.onreadystatechange = function() {
