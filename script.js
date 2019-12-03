@@ -10,7 +10,7 @@ function haeElokuvat() {
   // Perus XML request
   var xmlhttp = new XMLHttpRequest({mozSystem: true});
   xmlhttp.open("GET", "https://www.finnkino.fi/xml/Schedule/?area=" + teatteri, true); // Haetaan finnkino xml ja syötetään sen perään aiemmin tehty muuttuja
-  xmlhttp.withCredentials = true;
+  xmlhttp.withCredentials = false;
   xmlhttp.send();
   xmlhttp.onreadystatechange = function() {
     if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
